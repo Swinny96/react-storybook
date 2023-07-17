@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Button } from './Button';
-import './header.css';
+import './header.less';
 
 type User = {
   name: string;
