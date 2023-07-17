@@ -1,6 +1,5 @@
 import React from 'react';
 import './button.css';
-import './button.less';
 
 interface ButtonProps {
   /**
@@ -37,7 +36,6 @@ export const Button = ({
 }: ButtonProps) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
-    <div>
     <button
       type="button"
       className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
@@ -46,7 +44,5 @@ export const Button = ({
     >
       {label}
     </button>
-    <button className='btn btn-primary'>Test</button>
-    </div>
   );
 };
