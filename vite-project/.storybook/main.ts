@@ -11,6 +11,10 @@ const config: StorybookConfig = {
           // Require your Less preprocessor here
           implementation: require('less'),
         },
+        sass: {
+          // Require your Sass preprocessor here
+          implementation: require('sass'),
+        },
       },
     },
     "@storybook/addon-interactions",
