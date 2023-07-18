@@ -7,6 +7,11 @@ const meta = {
   title: 'Example/Button',
   component: Button,
   tags: ['autodocs'],
+   parameters: {
+    theming: {
+      themeOverride: "dark", // component level override
+    },
+  },
   argTypes: {
     backgroundColor: { control: 'color' },
   },
@@ -21,6 +26,18 @@ export const Primary: Story = {
     primary: true,
     label: 'Button',
   },
+};
+
+export const PrimaryDark: Story = {
+  args: {
+    primary: true,
+    label: 'Button',
+  },
+  parameters: {
+    theming: {
+      themeOverride: "dark", // Story level override
+    },
+  }
 };
 
 export const Secondary: Story = {
